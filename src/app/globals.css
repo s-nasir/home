@@ -1,0 +1,126 @@
+/* Import Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body, * {
+  cursor: url('/cursors/aero.cur'), auto;
+}
+a:hover {
+  cursor: url('/cursors/cross.cur'), auto;
+}
+/* Root Variables */
+:root {
+  /* Main Variables */
+  --font-body: 'Inter', sans-serif;
+  --color-background: #474747;
+  --color-primary: #FFFFFF;
+  --color-secondary: #C7C7C7;
+  --color-text: #F3FFCE;
+  --color-primary-foreground: #000000;
+  --color-secondary-foreground: #000000;
+  --radius: 0.5rem;
+
+  /* Sidebar Variables */
+  --sidebar-background: hsl(0, 0%, 14.12%);
+  --sidebar-foreground: hsl(240, 4.8%, 95.9%);
+  --sidebar-primary: hsl(224.3, 76.3%, 48%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(240, 3.7%, 15.9%);
+  --sidebar-accent-foreground: hsl(240, 4.8%, 95.9%);
+  --sidebar-border: hsl(240, 3.7%, 15.9%);
+  --sidebar-ring: hsl(217.2, 91.2%, 59.8%);
+}
+
+
+/* Base Styles */
+@layer base {
+  html,
+  body {
+    @apply font-body text-primary bg-background m-0 p-0;
+
+  }
+
+  p {
+    @apply text-text;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold text-primary;
+  }
+
+  a {
+    @apply text-foreground;
+  }
+
+  a:hover {
+    @apply text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+
+/* Sidebar Styles (Converted to Plain CSS) */
+.sidebar {
+  background-color: var(--sidebar-background);
+  border-color: var(--sidebar-border);
+  color: var(--sidebar-foreground);
+  height: 100vh;
+}
+
+.sidebar a {
+  color: var(--sidebar-foreground);
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: var(--sidebar-primary);
+}
+
+
+/* Sidebar Buttons Styles */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Ensure it fills the width of the sidebar group */
+  gap: 1rem;
+}
+
+.buttons > button {
+  width: 100%; /* Button fills the width of the parent */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove default button border */
+  text-align: left; /* Align text to the left */
+  color: inherit; /* Inherit text color */
+  cursor: inherit; /* Change cursor to pointer on hover */
+}
+
+.buttons > button:hover {
+  background-color: #1C1C1C; /* Darker background on hover */
+  color: #ADD8E6; /* Light blue text color on hover */
+}
+
+.buttons > button > a {
+  text-decoration: none;
+  width: 100%;
+  display: block; /* Ensure link fills the button */
+  color: inherit; /* Inherit text color from button */
+}
+
+.buttons > button > a:hover {
+  color: inherit; /* Prevent link from changing color separately */
+}
