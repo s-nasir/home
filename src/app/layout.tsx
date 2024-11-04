@@ -1,8 +1,9 @@
+// layout.tsx
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/app-sidebar"
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,22 +23,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SidebarProvider>
-      <AppSidebar />
-      <main>
-        {children}
-      </main>
-    </SidebarProvider>
+          <AppSidebar />
+          <main className="flex-1 w-full max-h-screen max-w-screen flex flex-col items-center justify-start">
+            {children}
+          </main>
+        </SidebarProvider>
       </body>
     </html>
   );
 }
-

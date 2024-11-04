@@ -25,7 +25,17 @@ const config: Config = {
           DEFAULT: 'var(--color-secondary)',
           foreground: 'var(--color-secondary-foreground)',
         },
-        // You can remove the 'sidebar' color configurations if not used elsewhere
+        sidebar: {
+          background: 'var(--sidebar-background)',
+          foreground: 'var(--sidebar-foreground)',
+          primary: 'var(--sidebar-primary)',
+          'primary-foreground': 'var(--sidebar-primary-foreground)',
+          accent: 'var(--sidebar-accent)',
+          'accent-foreground': 'var(--sidebar-accent-foreground)',
+          border: 'var(--sidebar-border)',
+          ring: 'var(--sidebar-ring)',
+        },
+
       },
       borderRadius: {
         lg: 'var(--radius)',
