@@ -7,7 +7,6 @@ import {
   SidebarRail,
   SidebarMenuButton
 } from "@/components/ui/sidebar"
-import { ChevronRight } from "lucide-react"
 
 export function AppSidebar() {
   return (

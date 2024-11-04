@@ -28,12 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
         <SidebarProvider>
           <AppSidebar />
-          <main className="flex-1 w-full max-h-screen max-w-screen flex flex-col items-center justify-start">
+          <main className="flex-1 w-full  max-w-screen flex flex-col items-center justify-start">
             {children}
           </main>
         </SidebarProvider>
