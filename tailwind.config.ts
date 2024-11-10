@@ -34,6 +34,8 @@ const config: Config = {
           'accent-foreground': 'var(--sidebar-accent-foreground)',
           border: 'var(--sidebar-border)',
           ring: 'var(--sidebar-ring)',
+          hover: 'var(--sidebar-hover)',
+          'hover-foreground': 'var(--sidebar-hover-foreground)',
         },
 
       },
