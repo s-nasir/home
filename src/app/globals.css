@@ -1,26 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-body, * {
-  cursor: url('/cursors/aero.cur'), auto;
+body,
+* {
+  cursor: url("/cursors/aero.cur"), auto;
 }
 a:hover {
-  cursor: url('/cursors/cross.cur'), auto;
+  cursor: url("/cursors/cross.cur"), auto;
 }
 /* Root Variables */
 :root {
   /* Main Variables */
-  --color-background: #D7D9D4;
-  --color-primary: #1F0B0A;
-  --color-secondary: #C7C7C7;
-  --color-text: #1F0B0A ;
+  --color-background: #d7d9d4;
+  --color-primary: #000000;
+  --color-secondary: #c7c7c7;
+  --color-text: #000000;
   --color-primary-foreground: #000000;
   --color-secondary-foreground: #000000;
   --radius: 0.5rem;
+  --color-divs: #c3c5be;
 
   /* Sidebar Variables */
   --sidebar-background: hsl(77, 6%, 76%);
@@ -35,13 +36,11 @@ a:hover {
   --sidebar-hover-foreground: hsl(3, 51%, 8%);
 }
 
-
 /* Base Styles */
 @layer base {
   html,
   body {
-    @apply font-body text-primary bg-background m-0 p-0;
-
+    @apply font-body text-secondary bg-background m-0 p-0;
   }
 
   p {
@@ -70,7 +69,6 @@ a:hover {
   }
 }
 
-
 /* Sidebar Hover */
 
 .group:hover .sidebar-hover-area {
@@ -94,8 +92,4 @@ a:hover {
   pointer-events: none;
 }
 
-
-
-
 /* MAIN */
-
