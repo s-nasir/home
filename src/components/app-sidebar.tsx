@@ -32,3 +32,13 @@ export function AppSidebar() {
     </>
   );
 }
+
+
+// Scroll to element on page:
+
+ // onClick={() => {
+ //          document.getElementById("launch-schedule")?.scrollIntoView({
+ //            behavior: "smooth",
+ //          });
+ //        }}
+ //        className="flex items-center gap-1 text-xs text-zinc-400"
