@@ -1,27 +1,24 @@
-import { ReactLenis } from "lenis";
+// import { ReactLenis } from "lenis";
 import {
   motion,
   useMotionTemplate,
   useScroll,
   useTransform,
 } from "framer-motion";
-import { SiSpacex } from "react-icons/si";
-import { FiArrowRight, FiMapPin } from "react-icons/fi";
-import { useRef } from "react";
 
-const SECTION_HEIGHT = 1500;
+// const SECTION_HEIGHT = 1500;
 
 const Hero = () => {
   return (
     <div>
       <div
         className="w-full relative bg-[#d7d9d4]"
-        style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
+        // style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
       >
-        <CenterImage />
+        {/* <CenterImage /> */}
         <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-[#d7d9d4] " />
       </div>
-      <div className=" h-screen w-screen bg-[#d7d9d4]" />
+      {/* <div className=" h-screen w-screen bg-[#d7d9d4]" /> */}
     </div>
   );
 };
@@ -61,16 +58,16 @@ const CenterImage = () => {
   );
 };
 
-const ParallaxImages = () => {
-  return (
-    <div className="mx-auto flex max-w-5xl px-4 pt-[200px]">
-      <div className="font-martian font-extrabold text-6xl relative z-20 text-primary">
-        Syed Nasir
-      </div>
-    </div>
-  );
-};
+// const ParallaxImages = () => {
+//   return (
+//     <div className="mx-auto flex max-w-5xl px-4 pt-[200px]">
+//       <div className="font-martian font-extrabold text-6xl relative z-20 text-primary">
+//         Syed Nasir
+//       </div>
+//     </div>
+//   );
+// };
 
-const ParallaxImg = ({ className, alt, src, start, end }) => {};
+// const ParallaxImg = ({ className, alt, src, start, end }) => {};
 
-export { Hero, CenterImage };
+export { Hero };
