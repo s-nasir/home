@@ -21,7 +21,7 @@ a:hover {
   --color-primary-foreground: #000000;
   --color-secondary-foreground: #000000;
   --radius: 0.5rem;
-  --color-divs: #c3c5be;
+  --color-divs: #c0c3bb;
 
   /* Sidebar Variables */
   --sidebar-background: hsl(77, 6%, 76%);
@@ -40,7 +40,7 @@ a:hover {
 @layer base {
   html,
   body {
-    @apply font-body text-secondary bg-background m-0 p-0;
+    @apply font-body text-secondary m-0 p-0;
   }
 
   p {
@@ -69,3 +69,16 @@ a:hover {
     scroll-padding: 300px;
   }
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
