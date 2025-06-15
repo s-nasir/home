@@ -4,7 +4,6 @@ import * as React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Overlay from "../components/ui/overlay";
 import Nav from "../components/ui/nav";
-import Pattern from "../components/bgpattern";
 
 export default function HomePage() {
   const [showOverlay, setShowOverlay] = React.useState(true);
@@ -34,16 +33,18 @@ export default function HomePage() {
           transition={{ duration: 0.5 }}
           className="relative h-screen overflow-hidden"
         >
-          <Pattern />
           <Nav />
           
           <main className="h-[calc(100vh-5rem)] overflow-y-auto snap-y snap-mandatory scrollbar-hide scroll-smooth">
             <section id="profile" className="h-screen w-full snap-start">
               <div className="flex justify-center items-center h-full">
-                <div className="bg-divs w-[40rem] h-[10rem] rounded-lg opacity-80">
-                  <div className="p-4 space-y-1">
-                    <h1 className="text-5xl">Syed Nasir</h1>
-                    <h3 className="text-3xl">Software Engineer</h3>
+                <div className="bg-divs w-[70rem] h-[37rem] rounded-lg opacity-80">
+                <div className="flex justify-center w-[8rem] h-[3rem] bg-black mt-5"> 
+                <h3 className="text-2xl mt-2 text-white">PROFILE</h3>
+                  </div>
+                  <div className="p-10 ml-20 mt-20 space-y-5">
+                    <h1 className="text-8xl">Syed Nasir</h1>
+                    <h3 className="text-5xl">Software Engineer</h3>
                     <p className="text-l">Toronto, ON</p>
                   </div>
                 </div>

@@ -8,6 +8,35 @@ body,
 * {
   cursor: url("/cursors/aero.cur"), auto;
 }
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, #d7d9d4 0%, #878c7d 100%);
+}
+
+.background-div {
+  border: 1px solid rgba(255,255,255,.1);
+  width: 10em;
+  height: 10em;
+  transform: rotate(45deg);
+  margin: 2em;
+  position: absolute;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.background-container {
+  z-index: -1;
+}
+
 a:hover {
   cursor: url("/cursors/cross.cur"), auto;
 }
@@ -21,7 +50,7 @@ a:hover {
   --color-primary-foreground: #000000;
   --color-secondary-foreground: #000000;
   --radius: 0.5rem;
-  --color-divs: #c0c3bb;
+  --color-divs: #6D8885;
 
   /* Sidebar Variables */
   --sidebar-background: hsl(77, 6%, 76%);
