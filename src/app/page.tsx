@@ -33,14 +33,14 @@ export default function HomePage() {
           transition={{ duration: 0.5 }}
           className="relative h-screen overflow-hidden"
         >
-          <Nav />
-          
-          <main className="h-[calc(100vh-5rem)] overflow-y-auto snap-y snap-mandatory scrollbar-hide scroll-smooth">
+          <main className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide scroll-smooth">
+            <Nav />
+
             <section id="profile" className="h-screen w-full snap-start">
               <div className="flex justify-center items-center h-full">
                 <div className="bg-divs w-[70rem] h-[37rem] rounded-lg opacity-80">
-                <div className="flex justify-center w-[8rem] h-[3rem] bg-black mt-5"> 
-                <h3 className="text-2xl mt-2 text-white">PROFILE</h3>
+                  <div className="flex justify-center w-[8rem] h-[3rem] bg-black mt-5">
+                    <h3 className="text-2xl mt-2 text-white">PROFILE</h3>
                   </div>
                   <div className="p-10 ml-20 mt-20 space-y-5">
                     <h1 className="text-8xl">Syed Nasir</h1>

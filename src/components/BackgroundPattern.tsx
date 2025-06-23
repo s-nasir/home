@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 const BackgroundPattern = () => {
   const rows = 4;
@@ -17,8 +17,8 @@ const BackgroundPattern = () => {
             key={i}
             className="background-div"
             style={{
-              left: `${(col * 25) + 5}%`,
-              top: `${(row * 25) + 5}%`,
+              left: `${col * 25 + 5}%`,
+              top: `${row * 25 + 5}%`,
             }}
           />
         );
@@ -27,4 +27,4 @@ const BackgroundPattern = () => {
   );
 };
 
-export default BackgroundPattern; 
+export default BackgroundPattern;
