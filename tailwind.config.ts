@@ -9,13 +9,17 @@ const config: Config = {
     "./styles/**/*.css",
   ],
   theme: {
-    extend: {
-      fontFamily: {
+    fontFamily: {
         martian: ['"Martian Mono"', 'monospace'],
-        body: ['"Martian Mono"', 'monospace'],
+        oswald: ['Oswald', 'sans-serif'],
+        barlow: ['"Barlow Condensed"', 'sans-serif'],
       },
+    extend: {
       container: {
         center: true,
+      },
+      backgroundImage: {
+      'topograph': "url('/images/topography.svg')",
       },
       colors: {
         background: "var(--color-background)",
@@ -42,6 +46,9 @@ const config: Config = {
           hover: "var(--sidebar-hover)",
           "hover-foreground": "var(--sidebar-hover-foreground)",
         },
+      },
+      dropShadow: {
+        glow: '0 0 1px var(--color-secondary)', 
       },
       borderRadius: {
         lg: "var(--radius)",
