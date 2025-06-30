@@ -56,7 +56,11 @@ export default function HomePage() {
                     <h3 className="text-5xl font-barlow">Software Engineer</h3>
                     <p className="text-l">Toronto, ON</p>
                   </div>
-                   <div className="col-span-2 p-5 mt-[8rem] ml-[2rem]">
+                  <div className="col-span-2">
+                    <img src="./images/bitmoji.png" className="w-60 h-65 blur-sm transition-blur duration-300 group-hover:blur-none"></img>
+
+                  </div>
+                   <div className="col-span-2 row-span-2 p-5 mt-[1rem] ml-[2rem]">
                   <SocialsSection />
                 </div>
                   </div>

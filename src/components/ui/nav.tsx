@@ -1,4 +1,5 @@
 import React from "react";
+import SocialsSection from "./socialsection";
 
 export default function Nav() {
   const scrollToSection = (sectionId: string) => {
@@ -13,7 +14,9 @@ export default function Nav() {
 
   return (
     <header className="w-full top-0 z-10 absolute bg-transparent">
+      
       <div className="flex justify-center items-center h-[5rem]">
+       
         <nav className="px-8 py-3 rounded-full shadow-sm bg-[#2F756F]">
           <ul className="flex list-none gap-10">
             <li>
